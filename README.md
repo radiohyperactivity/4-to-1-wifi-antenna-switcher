@@ -1,6 +1,8 @@
 # ESP32 Antenna Switcher
 
-A web-based antenna switcher controller for ESP32. Click image below for build video!
+A web-based antenna switcher controller for ESP32.
+
+Click image below for build video!
 
 [![](wifi-controlled-antenna-switch.png)](https://youtu.be/3fS-DUADLck)
 
