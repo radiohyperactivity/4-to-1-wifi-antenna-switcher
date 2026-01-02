@@ -65,7 +65,6 @@ Sorry about the quality of the "schematic", I built this from a mental schematic
 
 - **Web Interface**: Modern, responsive web UI for antenna selection
 - **4 Antenna Outputs**: Control 4 GPIO pins (only one active at a time)
-- **Physical Buttons**: 4 button inputs with interrupt-driven switching
 - **WiFi Configuration**: Web-based configuration portal in AP mode
 - **Serial Control**: Configure and control via USB serial interface
 - **HTTP API**: RESTful API for programmatic control
@@ -85,7 +84,6 @@ The following GPIO pins are used (easily configurable in code via #defines):
 - **GPIO 17**: Antenna 2 output
 - **GPIO 18**: Antenna 3 output
 - **GPIO 19**: Antenna 4 output
-- **GPIO 2**: Built-in status LED
 
 To change GPIO pins, modify the defines at the top of `src/main.cpp`:
 
@@ -132,7 +130,7 @@ Connect at **115200 baud** and use the following commands:
 set ssid <WiFi SSID>          - Set WiFi network name
 set password <WiFi Password>  - Set WiFi password
 set name <Unit Name>          - Set a friendly name for the unit
-set status                    - Display current configuration and status
+get status                    - Display current configuration and status
 ```
 
 **Examples:**
@@ -140,7 +138,7 @@ set status                    - Display current configuration and status
 set ssid MyNetwork
 set password MyPassword123
 set name Antenna_Switch_1
-set status
+get status
 ```
 
 **Note**: Changing WiFi SSID or password will cause the device to restart automatically.
