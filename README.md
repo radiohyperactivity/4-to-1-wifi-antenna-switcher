@@ -36,6 +36,31 @@ Sorry about the quality of the "schematic", I built this from a mental schematic
 
 ![](<schematic.png>)
 
+## 3D Printed Parts
+
+### Antenna Switch Case
+
+![](<antenna-switch-case.png>)
+
+- [antenna-switch-case.fcstd](<antenna-switch-case.fcstd>)
+- [antenna-switch-case.stl](<antenna-switch-case.stl>)
+
+### Antenna Switch Lid
+
+![](<antenna-switch-lid.png>)
+
+- [antenna-switch-lid.fcstd](<antenna-switch-lid.fcstd>)
+- [antenna-switch-lid.stl](<antenna-switch-lid.stl>)
+
+### Control Box and Lid
+
+![](<control-box.png>)
+![](<control-box-lid.png>)
+
+- [control-box-and-lid.fcstd](<control-box-and-lid.fcstd>)
+- [control-box.stl](<control-box.stl>)
+- [control-box-lid.stl](<control-box-lid.stl>)
+
 ## Features
 
 - **Web Interface**: Modern, responsive web UI for antenna selection
