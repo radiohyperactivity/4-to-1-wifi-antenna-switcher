@@ -2,7 +2,7 @@
 
 A web-based antenna switcher controller for ESP32.
 
-[Build video](<(https://youtu.be/3fS-DUADLck)>)
+[Build video](https://youtu.be/3fS-DUADLck)
 
 [![](wifi-controlled-antenna-switch.png)](https://youtu.be/3fS-DUADLck)
 
