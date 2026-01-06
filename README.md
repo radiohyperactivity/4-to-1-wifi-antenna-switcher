@@ -2,6 +2,8 @@
 
 A web-based antenna switcher controller for ESP32.
 
+[Build video](https://youtu.be/3fS-DUADLck)
+
 [![](wifi-controlled-antenna-switch.png)](https://youtu.be/3fS-DUADLck)
 
 ## Bill of Materials
@@ -37,11 +39,35 @@ Sorry about the quality of the "schematic", I built this from a mental schematic
 
 ![](<schematic.png>)
 
+## 3D Printed Parts
+
+### Antenna Switch Case
+
+![](<antenna-switch-case.png>)
+
+- [antenna-switch-case.fcstd](<antenna-switch-case.fcstd>)
+- [antenna-switch-case.stl](<antenna-switch-case.stl>)
+
+### Antenna Switch Lid
+
+![](<antenna-switch-lid.png>)
+
+- [antenna-switch-lid.fcstd](<antenna-switch-lid.fcstd>)
+- [antenna-switch-lid.stl](<antenna-switch-lid.stl>)
+
+### Control Box and Lid
+
+![](<control-box.png>)
+![](<control-box-lid.png>)
+
+- [control-box-and-lid.fcstd](<control-box-and-lid.fcstd>)
+- [control-box.stl](<control-box.stl>)
+- [control-box-lid.stl](<control-box-lid.stl>)
+
 ## Features
 
 - **Web Interface**: Modern, responsive web UI for antenna selection
 - **4 Antenna Outputs**: Control 4 GPIO pins (only one active at a time)
-- **Physical Buttons**: 4 button inputs with interrupt-driven switching
 - **WiFi Configuration**: Web-based configuration portal in AP mode
 - **Serial Control**: Configure and control via USB serial interface
 - **HTTP API**: RESTful API for programmatic control
@@ -61,7 +87,6 @@ The following GPIO pins are used (easily configurable in code via #defines):
 - **GPIO 17**: Antenna 2 output
 - **GPIO 18**: Antenna 3 output
 - **GPIO 19**: Antenna 4 output
-- **GPIO 2**: Built-in status LED
 
 To change GPIO pins, modify the defines at the top of `src/main.cpp`:
 
@@ -108,7 +133,7 @@ Connect at **115200 baud** and use the following commands:
 set ssid <WiFi SSID>          - Set WiFi network name
 set password <WiFi Password>  - Set WiFi password
 set name <Unit Name>          - Set a friendly name for the unit
-set status                    - Display current configuration and status
+get status                    - Display current configuration and status
 ```
 
 **Examples:**
@@ -116,7 +141,7 @@ set status                    - Display current configuration and status
 set ssid MyNetwork
 set password MyPassword123
 set name Antenna_Switch_1
-set status
+get status
 ```
 
 **Note**: Changing WiFi SSID or password will cause the device to restart automatically.
