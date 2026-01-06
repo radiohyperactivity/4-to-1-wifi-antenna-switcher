@@ -9,6 +9,9 @@ A web-based antenna switcher controller for ESP32.
 - **4:1 coax remote antenna switch**:
   - Affiliate link: https://s.click.aliexpress.com/e/_c4lKVSC3
   - Non-affiliate link: https://www.aliexpress.com/item/1005004278590056.html
+- **Alternate 4:1 coax remote antenna switch, 500W and matal enclosure**
+  - Affiliate link: https://s.click.aliexpress.com/e/_c4Uy7YfD
+  - Non-affiliate link: https://www.aliexpress.com/item/1005008447011701.html
 - **ESP32-WROOM-32U DevKit**:
   - Affiliate link: https://s.click.aliexpress.com/e/_c374wDdv
   - Non-affiliate link: https://www.aliexpress.com/item/1005010136688086.html
